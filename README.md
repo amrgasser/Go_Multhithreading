@@ -6,4 +6,11 @@
 
 ---
 
+### Console Commands to run in application
+
+- List all users: `listall`
+- Fid a user: `find ${userId}`
+- List all transfers: `listtransfers`
+- make a transfer: `transfer ${sourceId} ${targetId} ${amount}`
+
 ### To access the accounts in O(1) time we used an array to store all the users `users`, and a HashMap `userMap` that maps the ID -> index of user in `users`.
