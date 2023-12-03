@@ -15,7 +15,7 @@ type User struct {
 }
 
 func (user *User) Withdraw(amount float64) bool {
-	time.Sleep(500 * time.Millisecond)
+	time.Sleep(1000 * time.Millisecond)
 	user.mu.Lock()
 	if user.Balance >= amount {
 		user.Balance -= amount
